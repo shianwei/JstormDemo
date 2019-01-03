@@ -1,0 +1,25 @@
+#storm.cluster.mode: distributed
+storm.cluster.mode: local
+topology.name: mileage
+topology.spout.parallel: 1
+topology.count.bolt.parallel: 2
+topology.workers: 1
+
+
+#两点间里程阀值（千米/秒）
+milThreshold: 1
+#两点间油量阀值（升/秒）
+oilThreshold: 0.3333
+
+mil.max: 2000
+oil.max: 900
+
+#工作时间阀值（秒）
+workHoursThreshold: 600
+
+#spout缓存队列
+spout.queue.depth: 1000
+
+
+
+
